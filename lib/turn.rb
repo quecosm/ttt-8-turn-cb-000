@@ -28,6 +28,6 @@ puts "Please enter 1-9:"
     input = gets.strip
     index = input_to_index (input)
     until index.between?(0,8) && !position_taken?(board, index)
-    move
+    move (board,index)
   end
 end
