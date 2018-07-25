@@ -29,7 +29,7 @@ def turn (board)
     input = gets.strip
     index = input_to_index (input)
     if index.between?(0,8) && !position_taken?(board, index)
-      move (board, index, "X")
+      move (board,index,"X")
     else
       turn (board)
     end
