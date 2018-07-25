@@ -25,5 +25,17 @@ end
 
 def turn 
   puts "Please enter 1-9:"
+  input = gets.strip
+  
+  input_to_index
+  
+  if position_taken? == FALSE
+    puts "Position taken. Please enter 1-9:"
+    input = gets.strip
+    
+  elsif valid_move? == TRUE
+    
+    
+  
   
 end
