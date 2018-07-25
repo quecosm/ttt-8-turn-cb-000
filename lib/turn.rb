@@ -29,11 +29,11 @@ loop do
   puts "Please enter 1-9:" 
     input = gets.strip
     index = input_to_index (input)
-  if valid_move? (board, index) == false  
+    valid_move? (board, index) 
     turn (board)
-  else 
+  
     break
   move (board, index, "X")
-    end
+    
   end
 end
