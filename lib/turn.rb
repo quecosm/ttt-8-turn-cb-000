@@ -29,6 +29,7 @@ puts "Please enter 1-9:"
     index = input_to_index (input)
     if index.between?(0,8) && !position_taken?(board, index)
       move (board, index)
-    else turn (board)
+    else 
+      turn (board)
   end
 end
