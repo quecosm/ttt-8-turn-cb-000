@@ -30,8 +30,9 @@ def turn (board)
     index = input_to_index (input)
     if index.between?(0,8) && !position_taken?(board, index)
       move(board,index,"X")
+      display_board
     else
       turn(board)
     end
-    display_board
+    
   end
