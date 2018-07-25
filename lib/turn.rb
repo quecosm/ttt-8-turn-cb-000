@@ -15,7 +15,9 @@ def move (array, index, current_player = "X")
   array[index] = current_player
 end
 
-def position taken? ()
+def position taken? (board, index)
+  board [index] != " "
+end
 
 def valid_move?
 end
