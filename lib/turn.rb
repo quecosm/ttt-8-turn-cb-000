@@ -15,11 +15,12 @@ def move (array, index, current_player = "X")
   array[index] = current_player
 end
 
-def position taken? (board, index)
+def position_taken? (board, index)
   board [index] != " "
 end
 
-def valid_move?
+def valid_move? (board, index)
+  if position_taken? == true 
 end
 
 def turn 
