@@ -3,4 +3,3 @@
 puts "Please enter 1-9:"
 input = gets.string
 input_to_index 
-def repeat = valid_move?
